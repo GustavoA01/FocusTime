@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="shortcut icon" href="./assets/icone.svg">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="./scr/main.js" defer type ="module"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+<body>
+    <div class="app">
+        <button class="toggle-mode">
+            <span>Ativar/Desativar modo escuro</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <section id="timer" class= "flex">
+            <span id = "minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class = "flex">
+            <button data-action="toggleRunning" class = "ph-bold ph-play-circle"></button>
+            <button data-action="pause" class = "ph-bold ph-pause-circle"></button>
+            <button data-action="set" class = "ph-bold ph-timer secundary"></button>
+            <button data-action="reset" class = "ph-bold ph-stop-circle secundary"i></button>
+            <button data-action="toggleMusic" class = "ph-bold ph-speaker-none secundary"></button>
+            <button data-action="toggleMusic" class = "ph-bold ph-speaker-high"></button>
+        </section>
+    </div>
+</body>
+</html>
